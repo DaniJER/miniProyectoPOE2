@@ -4,6 +4,10 @@
 
 package principal;
 
+import controller.InstructionsController;
+import model.InstructionsModel;
+import view.InstructionsView;
+
 /**
  *
  * @author El Rey
@@ -11,6 +15,12 @@ package principal;
 public class MiniProyecto2 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        InstructionsModel instructionsMod = new InstructionsModel();
+        InstructionsView instructionsV = new InstructionsView();
+        
+        InstructionsController instructionsCtr = new InstructionsController(instructionsMod, instructionsV);
+        instructionsCtr.iniciar();
+        instructionsV.setVisible(true);
     }
 }

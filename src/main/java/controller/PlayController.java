@@ -4,10 +4,15 @@
  */
 package controller;
 
+import model.PlayModel;
+import view.PlayView;
+import view.PrincipalView;
+
 /**
  *
  * @author El Rey
  */
-public class PlayController {
-    
+public class PlayController extends PrincipalView {
+    private PlayView PlayView;
+    private PlayModel PlayModel;
 }

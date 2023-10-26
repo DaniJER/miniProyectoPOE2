@@ -4,10 +4,12 @@
  */
 package model;
 
+import javax.swing.JLabel;
+
 /**
  *
  * @author El Rey
  */
 public class PlayModel {
-    
+  
 }

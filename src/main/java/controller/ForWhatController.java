@@ -4,10 +4,15 @@
  */
 package controller;
 
+import model.ForWhatModel;
+import view.ForWhatView;
+import view.PrincipalView;
+
 /**
  *
  * @author El Rey
  */
-public class ForWhatController {
-    
-}
+public class ForWhatController extends PrincipalView{
+    private ForWhatView ForWhatView;
+    private ForWhatModel ForwhatModel;
+    }
