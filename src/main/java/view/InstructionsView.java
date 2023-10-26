@@ -26,18 +26,45 @@ public class InstructionsView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(0, 0));
+        setPreferredSize(new java.awt.Dimension(950, 600));
+        getContentPane().setLayout(null);
+
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setMaximumSize(new java.awt.Dimension(0, 0));
+        jPanel1.setMinimumSize(new java.awt.Dimension(0, 0));
+        jPanel1.setName(""); // NOI18N
+        jPanel1.setPreferredSize(new java.awt.Dimension(0, 0));
+        jPanel1.setLayout(null);
+
+        jLabel1.setFont(new java.awt.Font("Fira Code", 0, 24)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel1.setText("<html>Este juego pone en acción la habilidad para comparar patrones visuales, entrenando además la atención a los detalles y la velocidad  perspectiva. Estas capacidades son relevantes cuando hay que decidir entre estímulos semejantes y hay que hacerlo de forma rápida, por ejemplo al reconocer fotografías, caras, objetos cotidianos o palabras escritas.<html>");
+        jLabel1.setToolTipText("");
+        jLabel1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabel1.setAlignmentY(0.0F);
+        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel1.setInheritsPopupMenu(false);
+        jLabel1.setMaximumSize(new java.awt.Dimension(30, 30));
+        jLabel1.setMinimumSize(new java.awt.Dimension(30, 30));
+        jLabel1.setName(""); // NOI18N
+        jLabel1.setNextFocusableComponent(jPanel1);
+        jLabel1.setOpaque(true);
+        jLabel1.setPreferredSize(new java.awt.Dimension(0, 0));
+        jLabel1.setRequestFocusEnabled(false);
+        jLabel1.setVerifyInputWhenFocusTarget(false);
+        jLabel1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(20, 10, 680, 560);
+        jLabel1.getAccessibleContext().setAccessibleName("");
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 950, 600);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -78,5 +105,7 @@ public class InstructionsView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
