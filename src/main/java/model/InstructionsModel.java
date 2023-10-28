@@ -4,22 +4,20 @@
  */
 package model;
 
+import controller.InstructionsController;
 import javax.swing.JLabel;
+import view.InstructionsView;
+import view.PrincipalView;
 
 /**
  *
  * @author El Rey
  */
-public class InstructionsModel {
-    private JLabel instructions = new JLabel();
+public class InstructionsModel extends InstructionsController {
+
+ 
     
-    public JLabel getInstructions(){
-        return instructions;
-    }
-    public void setInstructions(){
-        instructions = new JLabel();
-        instructions.setText("Esto es un texto de isntrucciones");
-        instructions.setSize(200,200);
-        instructions.setLocation(500, 500);
-    };
+
 }
+
+    

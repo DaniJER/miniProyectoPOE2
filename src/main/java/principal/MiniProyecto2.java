@@ -5,6 +5,7 @@
 package principal;
 
 import controller.InstructionsController;
+import controller.PrincipalController;
 import model.InstructionsModel;
 import view.InstructionsView;
 
@@ -15,12 +16,6 @@ import view.InstructionsView;
 public class MiniProyecto2 {
 
     public static void main(String[] args) {
-        
-        InstructionsModel instructionsMod = new InstructionsModel();
-        InstructionsView instructionsV = new InstructionsView();
-        
-        InstructionsController instructionsCtr = new InstructionsController(instructionsMod, instructionsV);
-        instructionsCtr.iniciar();
-        instructionsV.setVisible(true);
+        PrincipalController.showPrincipalView();     
     }
 }

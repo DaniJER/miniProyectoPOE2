@@ -4,6 +4,8 @@
  */
 package view;
 
+import controller.InstructionsController;
+
 /**
  *
  * @author El Rey
@@ -62,7 +64,6 @@ public class InstructionsView extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(0, 0));
         jPanel1.setLayout(null);
 
-        jLabel2.setText("fsdfasdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jLabel2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         jPanel1.add(jLabel2);
@@ -114,4 +115,15 @@ public class InstructionsView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+
+    public class buttonInstruction {
+
+        public static void addListener(InstructionsController aThis) {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+
+        public buttonInstruction() {
+        }
+    }
+
 }

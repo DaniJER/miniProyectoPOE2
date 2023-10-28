@@ -7,31 +7,24 @@ package controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import model.InstructionsModel;
-import view.InstructionsView;
-import view.PrincipalView;
+import view.*;
 
 /**
  *
  * @author El Rey
  */
-public class InstructionsController extends PrincipalView implements ActionListener{
-    private InstructionsView instructionsView;
-    private InstructionsModel instructionsModel;
-
-    public InstructionsController(InstructionsModel instructionsModel, InstructionsView instructionsView){
-        this.instructionsView = instructionsView;
-        this.instructionsModel = instructionsModel;
-        this.instructionsView.buttonInstructions.addListener(this);
-    };
+public class InstructionsController implements ActionListener{
+  
+    public static InstructionsView instructionsView = new InstructionsView();
     
-    public void iniciar(){
+    public static void eventoBttonInstruct(){
         
-        instructionsView.setTitle("Instrucciones");
-        instructionsView.setLocationRelativeTo(null);
+    }
+
+    public void instructions (ActionEvent e) {
+        instructionsView.setVisible(true);
     }
     
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        instructionsModel.getInstructions();
-    }
-}
+    
+    
+};

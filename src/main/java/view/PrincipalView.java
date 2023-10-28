@@ -4,6 +4,8 @@
  */
 package view;
 
+import controller.InstructionsController;
+
 /**
  *
  * @author El Rey
@@ -42,7 +44,6 @@ public class PrincipalView extends javax.swing.JFrame {
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("TILE GAME");
         jPanel1.add(jLabel1);
@@ -50,7 +51,6 @@ public class PrincipalView extends javax.swing.JFrame {
 
         buttonInstruction.setBackground(new java.awt.Color(235, 235, 235));
         buttonInstruction.setFont(new java.awt.Font("Fira Code", 0, 36)); // NOI18N
-        buttonInstruction.setForeground(new java.awt.Color(0, 0, 0));
         buttonInstruction.setText("Cómo jugar");
         buttonInstruction.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         buttonInstruction.setOpaque(true);
@@ -62,16 +62,17 @@ public class PrincipalView extends javax.swing.JFrame {
         jPanel1.add(buttonInstruction);
         buttonInstruction.setBounds(40, 430, 250, 80);
 
-        jugarButton.setBackground(new java.awt.Color(255, 255, 255));
         jugarButton.setFont(new java.awt.Font("Fira Code", 0, 36)); // NOI18N
-        jugarButton.setForeground(new java.awt.Color(0, 0, 0));
         jugarButton.setText("Jugar");
+        jugarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jugarButtonActionPerformed(evt);
+            }
+        });
         jPanel1.add(jugarButton);
         jugarButton.setBounds(360, 330, 230, 80);
 
-        paraQueButton.setBackground(new java.awt.Color(255, 255, 255));
         paraQueButton.setFont(new java.awt.Font("Perpetua", 0, 36)); // NOI18N
-        paraQueButton.setForeground(new java.awt.Color(0, 0, 0));
         paraQueButton.setText("Para qué sirve");
         paraQueButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,12 +89,16 @@ public class PrincipalView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonInstructionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonInstructionActionPerformed
-        // TODO add your handling code here:
+        InstructionsController.eventoBttonInstruct();
     }//GEN-LAST:event_buttonInstructionActionPerformed
 
     private void paraQueButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paraQueButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_paraQueButtonActionPerformed
+
+    private void jugarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jugarButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jugarButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -131,10 +136,10 @@ public class PrincipalView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton buttonInstruction;
+    public javax.swing.JButton buttonInstruction;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton jugarButton;
-    private javax.swing.JButton paraQueButton;
+    public javax.swing.JButton jugarButton;
+    public javax.swing.JButton paraQueButton;
     // End of variables declaration//GEN-END:variables
 }
