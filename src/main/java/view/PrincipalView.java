@@ -5,6 +5,7 @@
 package view;
 
 import controller.InstructionsController;
+import javax.swing.JButton;
 
 /**
  *
@@ -89,7 +90,7 @@ public class PrincipalView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonInstructionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonInstructionActionPerformed
-        InstructionsController.eventoBttonInstruct();
+        InstructionsController.eventBttonInstruct();
     }//GEN-LAST:event_buttonInstructionActionPerformed
 
     private void paraQueButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paraQueButtonActionPerformed
@@ -136,10 +137,22 @@ public class PrincipalView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton buttonInstruction;
+    private javax.swing.JButton buttonInstruction;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    public javax.swing.JButton jugarButton;
-    public javax.swing.JButton paraQueButton;
+    private javax.swing.JButton jugarButton;
+    private javax.swing.JButton paraQueButton;
     // End of variables declaration//GEN-END:variables
+
+    public JButton getButtonInstruction() {
+        return buttonInstruction;
+    }
+
+    public JButton getJugarButton() {
+        return jugarButton;
+    }
+
+    public JButton getParaQueButton() {
+        return paraQueButton;
+    }
 }

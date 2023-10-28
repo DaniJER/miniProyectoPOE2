@@ -13,18 +13,20 @@ import view.*;
  *
  * @author El Rey
  */
-public class InstructionsController implements ActionListener{
-  
-    public static InstructionsView instructionsView = new InstructionsView();
+public class InstructionsController extends PrincipalController{
+    //public static PrincipalView principalView = new PrincipalView();
+    public static PrincipalController principalCtr = new PrincipalController(); 
+    public static InstructionsView instructions = new InstructionsView();
     
-    public static void eventoBttonInstruct(){
+    
+    public static void showInstruct(){instructions.setVisible(true);}
+    public static void closeInstruct(){instructions.setVisible(false);}
+    
+    public static void eventBttonInstruct(){
+        closePrincipalView();
+        showInstruct();
+        System.out.println("Evento!");
         
-    }
-
-    public void instructions (ActionEvent e) {
-        instructionsView.setVisible(true);
-    }
-    
-    
+    };
     
 };
