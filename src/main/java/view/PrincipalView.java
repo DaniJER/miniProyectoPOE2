@@ -4,14 +4,13 @@
  */
 package view;
 
-import controller.InstructionsController;
 import javax.swing.JButton;
 
 /**
  *
  * @author El Rey
  */
-public class PrincipalView extends javax.swing.JFrame {
+public class PrincipalView extends javax.swing.JFrame{
 
     /**
      * Creates new form PrincipalView
@@ -90,7 +89,7 @@ public class PrincipalView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonInstructionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonInstructionActionPerformed
-        InstructionsController.eventBttonInstruct();
+        //InstructionsController.eventBttonInstruct();
     }//GEN-LAST:event_buttonInstructionActionPerformed
 
     private void paraQueButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paraQueButtonActionPerformed
@@ -148,11 +147,25 @@ public class PrincipalView extends javax.swing.JFrame {
         return buttonInstruction;
     }
 
+    //public void setButtonInstruction(JButton buttonInstruction) {
+     //   this.buttonInstruction = buttonInstruction;
+    //}
+
     public JButton getJugarButton() {
         return jugarButton;
+    }
+
+    public void setJugarButton(JButton jugarButton) {
+        this.jugarButton = jugarButton;
     }
 
     public JButton getParaQueButton() {
         return paraQueButton;
     }
+
+    public void setParaQueButton(JButton paraQueButton) {
+        this.paraQueButton = paraQueButton;
+    }
+
+    
 }

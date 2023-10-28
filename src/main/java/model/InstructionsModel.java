@@ -5,19 +5,18 @@
 package model;
 
 import controller.InstructionsController;
+import controller.PrincipalController;
 import javax.swing.JLabel;
-import view.InstructionsView;
-import view.PrincipalView;
-
 /**
  *
  * @author El Rey
  */
-public class InstructionsModel extends InstructionsController {
-
- 
+public class InstructionsModel extends PrincipalController{
     
-
+    
+    
+   
+   
 }
 
     

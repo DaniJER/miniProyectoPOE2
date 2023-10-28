@@ -16,6 +16,7 @@ import view.InstructionsView;
 public class MiniProyecto2 {
 
     public static void main(String[] args) {
-        PrincipalController.showPrincipalView();     
+        PrincipalController principal = new PrincipalController();
+        principal.showP();
     }
 }

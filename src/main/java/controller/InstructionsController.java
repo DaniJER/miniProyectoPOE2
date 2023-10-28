@@ -6,27 +6,21 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import model.InstructionsModel;
+import model.*;
 import view.*;
 
 /**
  *
  * @author El Rey
  */
-public class InstructionsController extends PrincipalController{
-    //public static PrincipalView principalView = new PrincipalView();
-    public static PrincipalController principalCtr = new PrincipalController(); 
-    public static InstructionsView instructions = new InstructionsView();
+public class InstructionsController extends PrincipalView implements ActionListener{
+    public static InstructionsModel intructionsModel = new InstructionsModel();
+    //public static void ActbttonInstruc(){instructionsModel};
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
-    
-    public static void showInstruct(){instructions.setVisible(true);}
-    public static void closeInstruct(){instructions.setVisible(false);}
-    
-    public static void eventBttonInstruct(){
-        closePrincipalView();
-        showInstruct();
-        System.out.println("Evento!");
-        
-    };
     
 };

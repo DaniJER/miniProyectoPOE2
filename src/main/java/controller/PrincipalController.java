@@ -3,15 +3,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package controller;
-import view. *;
+//import view. *;
+
+import model.PrincipalModel;
+import view.PrincipalView;
+
 /**
  *
  * @author El Rey
  */
-public class PrincipalController {
-    
-    //Metodos para abrir y cerrar la ventana principal del juego
+public class PrincipalController extends PrincipalView {
     public static PrincipalView principalView = new PrincipalView();
-    public static void showPrincipalView(){principalView.setVisible(true);};
-    public static void closePrincipalView(){principalView.setVisible(false);};
+    public static PrincipalModel principalModel = new PrincipalModel();
+    public static void showP(){principalModel.showPrincipalView();};
+    //
+    //public static void showP(){principalModel.};
+
+    //public static showPrincipalView(){principalModel.showPrincipalView();}
+    
 }
