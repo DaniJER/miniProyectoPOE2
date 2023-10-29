@@ -35,11 +35,13 @@ public class PrincipalView extends javax.swing.JFrame{
         paraQueButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(153, 153, 153));
         setMaximumSize(new java.awt.Dimension(0, 0));
         getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
-        jPanel1.setMaximumSize(new java.awt.Dimension(950, 600));
+        jPanel1.setMaximumSize(new java.awt.Dimension(1000, 1000));
+        jPanel1.setOpaque(false);
         jPanel1.setLayout(null);
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
@@ -83,7 +85,7 @@ public class PrincipalView extends javax.swing.JFrame{
         paraQueButton.setBounds(670, 430, 240, 90);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 950, 600);
+        jPanel1.setBounds(0, 0, 0, 0);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -131,6 +133,8 @@ public class PrincipalView extends javax.swing.JFrame{
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new PrincipalView().setVisible(true);
+                new PrincipalView().setLocationRelativeTo(null);
+                new PrincipalView().setSize(200, 200);
             }
         });
     }
@@ -147,9 +151,9 @@ public class PrincipalView extends javax.swing.JFrame{
         return buttonInstruction;
     }
 
-    //public void setButtonInstruction(JButton buttonInstruction) {
-     //   this.buttonInstruction = buttonInstruction;
-    //}
+    public void setButtonInstruction(JButton buttonInstruction) {
+     this.buttonInstruction = buttonInstruction;
+    }
 
     public JButton getJugarButton() {
         return jugarButton;

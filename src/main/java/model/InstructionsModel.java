@@ -11,7 +11,14 @@ import javax.swing.JLabel;
  *
  * @author El Rey
  */
-public class InstructionsModel extends PrincipalController{
+public class InstructionsModel extends InstructionsController{
+   public static InstructionsController instruct = new InstructionsController();
+   
+   public static void changePageInstruct (){
+       
+       
+ 
+  };
     
     
     
