@@ -26,18 +26,31 @@ public class ForWhatView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(0, 0));
+        getContentPane().setLayout(null);
+
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel1.setLayout(null);
+
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 42)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setText("<html>Este juego pone en acción la habilidad para comparar patrones visuales, entrenando además la atención a los detalles y la velocidad perspectiva. Estas capacidades son relevantes cuando hay que decidir entre estímulos semejantes y hay que hacerlo de forma rápida, por ejemplo al reconocer fotografías, caras, objetos cotidianos o palabras escritas.<html>");
+        jLabel1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabel1.setAlignmentX(1.0F);
+        jLabel1.setAlignmentY(-5.0F);
+        jLabel1.setFocusTraversalPolicyProvider(true);
+        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setIconTextGap(0);
+        jLabel1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(70, 60, 840, 470);
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 950, 600);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -78,5 +91,7 @@ public class ForWhatView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
