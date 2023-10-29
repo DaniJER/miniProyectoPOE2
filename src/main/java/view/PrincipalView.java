@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package view;
-
+import controller.*;
 /**
  *
  * @author El Rey
@@ -41,12 +41,12 @@ public class PrincipalView extends javax.swing.JFrame {
         jPanel1.setLayout(null);
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("TILE GAME");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(300, 70, 300, 120);
+        jLabel1.setBounds(310, 90, 350, 170);
 
         buttonInstruction.setBackground(new java.awt.Color(235, 235, 235));
         buttonInstruction.setFont(new java.awt.Font("Fira Code", 0, 36)); // NOI18N
@@ -66,8 +66,13 @@ public class PrincipalView extends javax.swing.JFrame {
         jugarButton.setFont(new java.awt.Font("Fira Code", 0, 36)); // NOI18N
         jugarButton.setForeground(new java.awt.Color(0, 0, 0));
         jugarButton.setText("Jugar");
+        jugarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jugarButtonActionPerformed(evt);
+            }
+        });
         jPanel1.add(jugarButton);
-        jugarButton.setBounds(360, 330, 230, 80);
+        jugarButton.setBounds(350, 330, 230, 80);
 
         paraQueButton.setBackground(new java.awt.Color(255, 255, 255));
         paraQueButton.setFont(new java.awt.Font("Perpetua", 0, 36)); // NOI18N
@@ -79,7 +84,7 @@ public class PrincipalView extends javax.swing.JFrame {
             }
         });
         jPanel1.add(paraQueButton);
-        paraQueButton.setBounds(670, 430, 240, 90);
+        paraQueButton.setBounds(630, 420, 240, 90);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 950, 600);
@@ -94,8 +99,11 @@ public class PrincipalView extends javax.swing.JFrame {
     private void paraQueButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paraQueButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_paraQueButtonActionPerformed
-
-    /**
+    
+    private void jugarButtonActionPerformed(java.awt.event.ActionEvent evt) {
+        controller.PlayController.eventJugarButton();
+    }
+    /** 
      * @param args the command line arguments
      */
     public static void main(String args[]) {
