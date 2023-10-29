@@ -90,7 +90,7 @@ public class PrincipalView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonInstructionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonInstructionActionPerformed
-        InstructionsController.eventBttonInstruct();
+        //InstructionsController.eventBttonInstruct();
     }//GEN-LAST:event_buttonInstructionActionPerformed
 
     private void paraQueButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paraQueButtonActionPerformed

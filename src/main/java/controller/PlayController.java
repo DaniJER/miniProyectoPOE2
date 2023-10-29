@@ -34,9 +34,9 @@ public class PlayController extends PrincipalView implements ActionListener {
     
     
 
-public class PlayController {
+/*public class PlayController {
     public static PlayView playWindow = new PlayView();
     public static void eventJugarButton(){
         System.out.println("Event!!");
-    }
+    }*/
 }

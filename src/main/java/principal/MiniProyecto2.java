@@ -21,7 +21,6 @@ public class MiniProyecto2 {
         PrincipalController.showPrincipalView();     
         PlayModel playM = new PlayModel();
         PlayView playV = new PlayView();
-        
         PlayController playC = new PlayController();
     }
 }

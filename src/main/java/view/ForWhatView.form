@@ -49,9 +49,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="42" style="0"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="horizontalAlignment" type="int" value="4"/>
             <Property name="text" type="java.lang.String" value="&lt;html&gt;Este juego pone en acci&#xf3;n la habilidad para comparar patrones visuales, entrenando adem&#xe1;s la atenci&#xf3;n a los detalles y la velocidad perspectiva. Estas capacidades son relevantes cuando hay que decidir entre est&#xed;mulos semejantes y hay que hacerlo de forma r&#xe1;pida, por ejemplo al reconocer fotograf&#xed;as, caras, objetos cotidianos o palabras escritas.&lt;html&gt;"/>
             <Property name="verticalAlignment" type="int" value="1"/>
