@@ -4,12 +4,12 @@
  */
 package model;
 
-import controller.InstructionsController;
-
+import javax.swing.JLabel;
 
 /**
  *
  * @author El Rey
  */
 public class PlayModel {
-}
+  
+} 
