@@ -10,10 +10,11 @@ import model.PlayModel;
 import view.PlayView;
 import view.PrincipalView;
 
-/**
+import view.*;/**
  *
  * @author El Rey
  */
+
 public class PlayController extends PrincipalView implements ActionListener {
     private PlayView PlayView;
     private PlayModel PlayModel;
@@ -32,5 +33,10 @@ public class PlayController extends PrincipalView implements ActionListener {
     }
     
     
-    
+
+public class PlayController {
+    public static PlayView playWindow = new PlayView();
+    public static void eventJugarButton(){
+        System.out.println("Event!!");
+    }
 }
