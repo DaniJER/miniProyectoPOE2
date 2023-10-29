@@ -48,7 +48,6 @@ public class PlayView extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(40, 50, 250, 80);
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("jButton1");
         jButton1.setBorder(javax.swing.BorderFactory.createEtchedBorder());

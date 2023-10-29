@@ -44,11 +44,11 @@ public class PrincipalView extends javax.swing.JFrame {
         jPanel1.setLayout(null);
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 48)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("TILE GAME");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(310, 90, 350, 170);
+        jLabel1.setBounds(300, 70, 300, 120);
 
         buttonInstruction.setBackground(new java.awt.Color(235, 235, 235));
         buttonInstruction.setFont(new java.awt.Font("Fira Code", 0, 36)); // NOI18N
@@ -71,7 +71,7 @@ public class PrincipalView extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jugarButton);
-        jugarButton.setBounds(350, 330, 230, 80);
+        jugarButton.setBounds(360, 330, 230, 80);
 
         paraQueButton.setFont(new java.awt.Font("Perpetua", 0, 36)); // NOI18N
         paraQueButton.setText("Para qué sirve");
@@ -81,7 +81,7 @@ public class PrincipalView extends javax.swing.JFrame {
             }
         });
         jPanel1.add(paraQueButton);
-        paraQueButton.setBounds(630, 420, 240, 90);
+        paraQueButton.setBounds(670, 430, 240, 90);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 950, 600);
@@ -102,11 +102,6 @@ public class PrincipalView extends javax.swing.JFrame {
     }//GEN-LAST:event_jugarButtonActionPerformed
 
     /**
-    private void jugarButtonActionPerformed(java.awt.event.ActionEvent evt) {
-        controller.PlayController.eventJugarButton();
-    }
-    /** 
-
      * @param args the command line arguments
      */
     public static void main(String args[]) {
