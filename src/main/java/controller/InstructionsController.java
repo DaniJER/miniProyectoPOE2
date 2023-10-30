@@ -13,18 +13,31 @@ import view.*;
  *
  * @author El Rey
  */
-public class InstructionsController extends InstructionsView implements ActionListener{
+public class InstructionsController implements ActionListener{
     
-    public static PrincipalView principalView = new PrincipalView();
-    public static InstructionsModel intructionsModel = new InstructionsModel();
-    //public static void ActbttonInstruc(){instructionsModel};
+    private PrincipalView principalView;
+    private InstructionsView instructView;
+    private InstructionsModel instructModel;
 
+    public InstructionsController(PrincipalView principalView, InstructionsView instructView, InstructionsModel instructModel) {
+        this.principalView = principalView;
+        this.instructView = instructView;
+        this.instructModel = instructModel;
+        
+        principalView.buttonInstruction.addActionListener(this);
+    }
+
+    public void iniciar(){
+        instructView.setTitle("Instrucciones");
+        instructView.setLocationRelativeTo(null);
+    
+    }
     
     @Override
     public void actionPerformed(ActionEvent e) {
-        principalView.getButtonInstruction();
-        
+        System.out.println("HOLA");
+        instructModel.setInstrucView(instructView);
+        instructView.setVisible(true);
     }
-    
-    
-};
+
+}

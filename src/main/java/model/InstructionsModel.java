@@ -6,24 +6,24 @@ package model;
 
 import controller.InstructionsController;
 import controller.PrincipalController;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 /**
  *
  * @author El Rey
  */
-public class InstructionsModel extends InstructionsController{
-   public static InstructionsController instruct = new InstructionsController();
-   
-   public static void changePageInstruct (){
-       
-       
- 
-  };
+public class InstructionsModel {
+
+    private JFrame iView;
+
+    public JFrame getInstructView() {
+        return iView;
+    }
+
+    public void setInstrucView(JFrame iView) {
+        this.iView = iView;
+    }
     
-    
-    
-   
-   
-}
+};
 
     

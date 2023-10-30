@@ -12,7 +12,7 @@ import javax.swing.JButton;
  * @author El Rey
  */
 public class PrincipalView extends javax.swing.JFrame {
-
+    private InstructionsController intructionController;
     /**
      * Creates new form PrincipalView
      */
@@ -20,6 +20,7 @@ public class PrincipalView extends javax.swing.JFrame {
         initComponents();
     }
 
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -137,22 +138,11 @@ public class PrincipalView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton buttonInstruction;
+    public javax.swing.JButton buttonInstruction;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton jugarButton;
-    private javax.swing.JButton paraQueButton;
+    public javax.swing.JButton jugarButton;
+    public javax.swing.JButton paraQueButton;
     // End of variables declaration//GEN-END:variables
 
-    public JButton getButtonInstruction() {
-        return buttonInstruction;
-    }
-
-    public JButton getJugarButton() {
-        return jugarButton;
-    }
-
-    public JButton getParaQueButton() {
-        return paraQueButton;
-    }
-}
+};

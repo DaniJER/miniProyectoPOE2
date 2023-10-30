@@ -16,13 +16,5 @@ public class PrincipalModel extends PrincipalController{
     public static PrincipalController principalCtr = new PrincipalController();
     public static void showPrincipalView(){principalCtr.setVisible(true);}
     public static void closePrincipalView(){principalCtr.setVisible(false);}
-    
- 
-    /*public static void eventBttonInstruct(){
-            closePrincipalView();
-            showInstruct();closePrincipalView();
-            showInstruct();
-            System.out.println("Evento!");
-            
-    };*/
+   
 }
