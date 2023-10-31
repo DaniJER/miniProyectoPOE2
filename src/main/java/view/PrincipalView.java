@@ -12,15 +12,14 @@ import javax.swing.JButton;
  * @author El Rey
  */
 public class PrincipalView extends javax.swing.JFrame {
-    private InstructionsController intructionController;
+    private InstructionsController instructionController;
+    
     /**
      * Creates new form PrincipalView
      */
     public PrincipalView() {
         initComponents();
     }
-
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -56,11 +55,6 @@ public class PrincipalView extends javax.swing.JFrame {
         buttonInstruction.setText("Cómo jugar");
         buttonInstruction.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         buttonInstruction.setOpaque(true);
-        buttonInstruction.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonInstructionActionPerformed(evt);
-            }
-        });
         jPanel1.add(buttonInstruction);
         buttonInstruction.setBounds(40, 430, 250, 80);
 
@@ -90,12 +84,8 @@ public class PrincipalView extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void buttonInstructionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonInstructionActionPerformed
-        //InstructionsController.eventBttonInstruct();
-    }//GEN-LAST:event_buttonInstructionActionPerformed
-
     private void paraQueButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paraQueButtonActionPerformed
-        // TODO add your handling code here:
+       instructionController.iniciar();
     }//GEN-LAST:event_paraQueButtonActionPerformed
 
     private void jugarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jugarButtonActionPerformed

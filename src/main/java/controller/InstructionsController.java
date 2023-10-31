@@ -6,6 +6,7 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.text.View;
 import model.*;
 import view.*;
 
@@ -24,13 +25,12 @@ public class InstructionsController implements ActionListener{
         this.instructView = instructView;
         this.instructModel = instructModel;
         
-        principalView.buttonInstruction.addActionListener(this);
+        this.principalView.buttonInstruction.addActionListener(this);
     }
 
     public void iniciar(){
         instructView.setTitle("Instrucciones");
         instructView.setLocationRelativeTo(null);
-    
     }
     
     @Override
@@ -39,5 +39,6 @@ public class InstructionsController implements ActionListener{
         instructModel.setInstrucView(instructView);
         instructView.setVisible(true);
     }
+    
 
 }

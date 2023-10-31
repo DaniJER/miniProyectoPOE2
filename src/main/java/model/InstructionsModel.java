@@ -8,20 +8,21 @@ import controller.InstructionsController;
 import controller.PrincipalController;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import view.InstructionsView;
 /**
  *
  * @author El Rey
  */
 public class InstructionsModel {
 
-    private JFrame iView;
+    private InstructionsController iView;
 
-    public JFrame getInstructView() {
+    public InstructionsController getInstructView() {
         return iView;
     }
 
-    public void setInstrucView(JFrame iView) {
-        this.iView = iView;
+    public void setInstrucView(InstructionsView iView) {
+       // this.iView = iView;
     }
     
 };

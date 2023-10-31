@@ -24,7 +24,10 @@ public class MiniProyecto2 {
         InstructionsView iView = new InstructionsView();
         InstructionsModel iModel = new InstructionsModel();
         InstructionsController iController = new InstructionsController(pView,iView,iModel);
+        
         iController.iniciar();
+        
+        pView.setVisible(true);
         
         principalC.showP();    
         PlayModel playM = new PlayModel();
