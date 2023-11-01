@@ -101,7 +101,11 @@ public class InstructionsView2 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton3);
+<<<<<<< HEAD
         jButton3.setBounds(30, 240, 101, 50);
+=======
+        jButton3.setBounds(50, 260, 101, 29);
+>>>>>>> develop
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 950, 600);
